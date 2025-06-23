@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1976D2"
+        android:title="Eventos Extremos"
+        android:titleTextColor="#FFFFFF"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#F5F7FA"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Novo Evento"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/editLocationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Local do evento"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:padding="14dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editEventType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo do evento"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:padding="14dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editImpactDegree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Grau de impacto"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:padding="14dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editEventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data (DD/MM/AAAA)"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:padding="14dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/editAffectedPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pessoas afetadas"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:padding="14dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adicionar Evento"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="18dp"
+                android:padding="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonEventList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Eventos Registrados"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/buttonIdentification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identificação dos Participantes"
+        android:backgroundTint="#F57C00"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
